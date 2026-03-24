@@ -2,6 +2,10 @@
 
 A Vectorless Retrieval Augmented Generation (RAG) system that extracts contextual information from  documents without vector embeddings, powered by PageIndex API and OpenAI.
 
+## Why Vectorless RAG?
+
+**PageIndex powers this system by focusing on intelligent document navigation rather than vector embeddings.** Instead of chunking and similarity search, it traverses pages and sections using keywords, metadata, and structured indexing. This approach delivers significant advantages: better context quality, and deterministic results—making it ideal for structured documents like PDFs. While vectorless systems excel at structured retrieval and keyword-based search, they complement vector-based approaches. A **hybrid architecture** combining structural filtering with semantic understanding offers the best balance of speed, intelligence, and cost efficiency for production RAG systems.
+
 ## Overview
 
 Vectorless RAG is a full-stack application built with **Express.js backend**, **React + Vite frontend**, styled with **Tailwind CSS**, and powered by **PageIndex + OpenAI APIs** that:
@@ -12,10 +16,6 @@ Vectorless RAG is a full-stack application built with **Express.js backend**, **
 ## Demo
 
 ![Vectorless RAG Demo](BE/demo.gif)
-
-## Why Vectorless RAG?
-
-**PageIndex powers this system by focusing on intelligent document navigation rather than vector embeddings.** Instead of chunking and similarity search, it traverses pages and sections using keywords, metadata, and structured indexing. This approach delivers significant advantages: better context quality, and deterministic results—making it ideal for structured documents like PDFs. While vectorless systems excel at structured retrieval and keyword-based search, they complement vector-based approaches. A **hybrid architecture** combining structural filtering with semantic understanding offers the best balance of speed, intelligence, and cost efficiency for production RAG systems.
 
 **Benefits of Hybrid Mode:**
 - Combines PageIndex's structural filtering with vector embeddings' semantic matching
